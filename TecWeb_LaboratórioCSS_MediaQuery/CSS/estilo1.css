@@ -1,0 +1,64 @@
+/*
+Faça uma DIV mudar de cor segundo a tabela abaixo. Quando a tela estiver
+no mínimo da largura demostrada na tabela a cor referente a largura deverá
+ser empregada.
+
+Largura cor
+320 Preto
+480 Azul claro
+600 Verde claro
+768 Amarelo claro
+800 Marron
+1024 Azul escuro
+1280 Verde escuro
+1440 Vermelho escuro
+*/
+body{
+    margin: 0;
+}
+
+.content{
+    width: 100vw;
+    height: 100vh;
+}
+
+@media (min-width: 0px) and (max-width: 320px){
+    .content{
+        background: rgb(0, 0, 0);
+    }
+}
+@media (min-width: 320px) and (max-width: 480px){
+    .content{
+        background: lightblue;
+    }
+}
+@media (min-width: 480px) and (max-width: 600px){
+     .content{
+        background: lightgreen;
+     }
+}
+@media (min-width: 600px) and (max-width: 768px){
+    .content{
+        background: lightyellow;
+    }
+}
+@media (min-width: 768px) and (max-width: 800px){
+    .content{
+        background: brown;
+    }
+}
+@media (min-width: 800px) and (max-width: 1024px){
+    .content{
+        background: darkblue;
+    }
+}
+@media (min-width: 1024px) and (max-width: 1280px){
+    .content{
+        background: darkgreen;
+    }
+}
+@media (min-width: 1280px) and (max-width: 1440px){
+    .content{
+        background: darkred;
+    }
+}

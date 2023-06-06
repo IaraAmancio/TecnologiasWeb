@@ -1,0 +1,85 @@
+/*
+4) Crie a reposividade necessária para que a página tenha os comportamentos
+descritos abaixo: 
+- Disposítivos móveis (celular)
+- Desktop
+- TV
+*/
+
+body, html{
+    margin: 5px;
+    padding: 0px;
+}
+
+.container{
+    margin: 5px;
+
+}
+
+.buttons{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+button{
+    width: 15rem;
+    font-size: 16px;
+}
+
+h1{
+    text-align: center;
+}
+p{
+    text-align: justify;
+}
+
+
+/*dispositivos móveis*/
+@media (min-width: 0px) and (max-width: 479px){
+    .content{
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: justify;
+        font-size: 20px;
+    }
+    .midia{
+        display: none;
+    }
+
+}
+
+/*desktop*/
+@media (min-width: 480px) and (max-width: 768px){
+
+    .content{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .midia{
+        display: none;
+    }
+}
+
+/*TV*/
+@media (min-width: 769px) and (max-width: 1400px){
+    .content{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: justify;
+        font-size: 16px;
+        gap: 20px;
+    }
+    .bandeira_brasil{
+        width: 300px;
+        height: auto;
+    }
+}
+
+

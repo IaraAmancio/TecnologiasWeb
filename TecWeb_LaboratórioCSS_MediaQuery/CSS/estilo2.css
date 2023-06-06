@@ -1,0 +1,25 @@
+/*
+Faça uma DIV somente será exibida em disponsitivo que estiver na
+orientação de paisagem.
+*/
+
+body{
+    margin: 0;
+}
+
+.content{
+    width: 100vw;
+    height: 100vh;
+}
+.bloco2{
+    display: block;
+}
+
+@media screen and (orientation: portrait){
+    .bloco2{
+        display: none;
+    }
+}
+
+
+

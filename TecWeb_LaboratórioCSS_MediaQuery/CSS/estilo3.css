@@ -1,0 +1,58 @@
+/*
+Crie a reposividade necessária para que a página tenha os comportamentos
+descritos abaixo
+- Disposítivos móveis (celular)
+- Desktop
+- TV
+*/
+body{
+    margin: 0;
+}
+.blocos{
+    width: 100vw;
+    height: 100vh;
+}
+
+/*dispositivos móveis*/
+@media (min-width: 0px) and (max-width: 479px){
+    .blocos#b1{
+        height: 100vh ;
+        background: lightgreen;
+    }
+    .blocos#b2, #b3, #b4, #b5{
+        display: none;
+    }
+}
+
+/*desktop*/
+@media (min-width: 480px) and (max-width: 768px){
+    .blocos#b1{
+        height: 50vh;
+        background: lightgreen;
+    }
+    .blocos#b2{
+        height: 50vh;
+        background: blue;
+    }
+    .blocos #b2, #b3, #b4, #b5{
+        display: none;
+    }
+}
+
+/*TV*/
+@media (min-width: 769px) and (max-width: 1024px){
+    .blocos#b1, .blocos#b4{
+        height: 20vh;
+        background: lightgreen;
+    }
+    .blocos#b2, .blocos#b5{
+        height: 20vh;
+        background: blue;
+    }
+    .blocos#b3{
+        height: 20vh;
+        background: rgb(207, 95, 207);
+    }
+}
+
+

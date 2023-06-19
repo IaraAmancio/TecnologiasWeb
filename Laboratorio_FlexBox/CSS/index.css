@@ -1,0 +1,293 @@
+/* Recomendo que quando for utilizar determinada classe, deixe as outras classes comentadas,
+porque algumas estavam interferindo em outras*/
+
+div{
+    display: flex;
+    background: blue;
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.slide1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.slide1 > #div4, #div5{
+    display: none;
+}
+
+/*
+.slide2{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.slide2 > #div4, #div5{
+    display: none;
+}
+
+
+.slide3{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+}
+.slide3 > #div4, #div5{
+    display: none;
+}
+
+
+.slide4{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.slide4 > #div4, #div5{
+    display: none;
+}
+
+
+.slide5{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.slide5 > #div5{
+    display: flex;
+}
+
+
+.slide6{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+.slide6 > #div5{
+    display: flex;
+}
+
+
+.slide7{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.slide7 > #div4, #div5{
+    display: none;
+}
+
+
+.slide8{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.slide8 > #div4, #div5{
+    display: none;
+}
+
+
+.slide9{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.slide9 > #div4, #div5{
+    display: none;
+}
+
+
+.slide10{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.slide10 > #div1{
+    height: 350px;
+}
+.slide10 > #div3{
+    height: 450px;
+}
+.slide10 > #div4, #div5{
+    display: none;
+}
+
+
+.slide11{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;  
+}
+.slide11 > div{
+    height: 100vh;
+}
+.slide11 > #div4, #div5{
+    display: none;
+}
+
+
+.slide12{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;  
+}
+.slide12 > #div2{
+    background: red;
+}
+.slide12 > #div5{
+    display: none;
+}
+
+
+.slide13{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;  
+}
+.slide13 > #div2{
+    font-size: 45px;
+    margin-top: 0;
+}
+.slide13 > #div5{
+    display: none;
+}
+
+
+.slide14{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;  
+}
+.slide14 > #div2{
+    order: 1;
+    background: red;
+}
+.slide14 > #div1, #div3, #div4{
+    order: 2;
+}
+.slide14 > #div5{
+    display: none;
+}
+
+
+.slide15{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;  
+}
+.slide15 > #div2{
+    background: red;
+}
+.slide15 > #div3{
+    order: 1;
+}
+.slide15 > #div1, #div2, #div4{
+    order: 2;
+}
+.slide15 > #div5{
+    display: none;
+}
+
+
+.slide16{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center; 
+    height: 100vh;
+}
+.slide16 > #div2{
+    background: red;
+    align-self: flex-start;
+}
+.slide16 > #div5{
+    display: none;
+}
+
+
+.slide17{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center; 
+    height: 100vh;
+}
+.slide17 > #div2{
+    background: red;
+    align-self: flex-end;
+}
+.slide17 > #div5{
+    display: none;
+}
+
+
+.slide18{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center; 
+    height: 100vh;
+}
+.slide18 > #div2{
+    background: red;
+    height: 100%;
+}
+.slide18 > #div5{
+    display: none;
+}
+
+
+.slide19{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center; 
+    height: 100vh;
+}
+.slide19 > #div2{
+    background: red;
+    flex: 2;
+}
+.slide19 > #div4, #div5{
+    display: none;
+}
+
+
+.slide20{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center; 
+    height: 100vh;
+}
+.slide20 > #div1, #div3{
+    flex: 2;
+}
+.slide20 > #div2{
+    flex: 1;
+}
+.slide20 > #div4, #div5{
+    display: none;
+}
+*/
